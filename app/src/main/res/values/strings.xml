@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ... string lainnya ... -->
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nim_16_digit">Nim (16 digit)</string>
+    <string name="No_Telp">No Telp</string>
+    <string name="alamat_asal">Alamat Asal</string>
+    <string name="pilih_kamar">Pilih Kamar</string>
+    <string name="tanggal_masuk">Tanggal Masuk (dd/MM/yyyy)</string>
+    <string name="simpan_data">SIMPAN DATA</string>
+    <string name="app_name">app_name</string>
+</resources>

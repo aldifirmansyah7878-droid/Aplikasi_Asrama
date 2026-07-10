@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_riwayat_izin"
+        android:title="Riwayat Izin"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_riwayat_keluhan"
+        android:title="Riwayat Keluhan"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tambah_tamu"
+        android:title="Tambah Tamu"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_notifikasi"
+        android:title="Notifikasi"
+        app:showAsAction="never" />
+
+</menu>

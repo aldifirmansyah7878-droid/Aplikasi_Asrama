@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- CACHE INTERNAL -->
+    <cache-path
+        name="cache_files"
+        path="." />
+
+    <!-- CACHE EXTERNAL -->
+    <external-cache-path
+        name="external_cache"
+        path="." />
+
+    <!-- INTERNAL FILES -->
+    <files-path
+        name="internal_files"
+        path="." />
+
+    <!-- FOTO KELUHAN -->
+    <files-path
+        name="keluhan_foto"
+        path="keluhan_foto/" />
+
+    <!-- FOTO PEMBAYARAN -->
+    <files-path
+        name="bukti_pembayaran"
+        path="bukti_pembayaran/" />
+
+    <!-- FOTO PAKET (jika diperlukan) -->
+    <files-path
+        name="paket_foto"
+        path="paket_foto/" />
+
+    <!-- FOTO PROFIL PENGHUNI -->
+    <files-path
+        name="profil_penghuni"
+        path="profil_penghuni/" />
+
+    <!-- EXTERNAL FILES -->
+    <external-files-path
+        name="external_files"
+        path="." />
+
+</paths>

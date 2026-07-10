@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRiwayat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tvAlasan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alasan"
+            android:textColor="#424242"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvTanggalMulai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai: -"
+            android:textColor="#616161"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvTanggalSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selesai: -"
+            android:textColor="#616161"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvDurasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durasi: -"
+            android:textColor="#1A237E"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="MENUNGGU"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvLetakKunci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔑 Letak Kunci: -"
+            android:textColor="#1A237E"
+            android:textSize="12sp"
+            android:background="#F3F8FF"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

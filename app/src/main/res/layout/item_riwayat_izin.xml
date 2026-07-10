@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_card_rounded">
+
+    <TextView
+        android:id="@+id/tvNamaPenghuni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budi Santoso"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNomorKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kamar: A-101"
+        android:textSize="14sp"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/tvKeperluan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keperluan: Pulang kampung"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvKeluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keluar: 2026-06-26 14:00"
+        android:textSize="12sp"
+        android:textColor="#888" />
+
+    <TextView
+        android:id="@+id/tvPerkiraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perkiraan Kembali: 2026-07-01 20:00"
+        android:textSize="12sp"
+        android:textColor="#888" />
+
+    <TextView
+        android:id="@+id/tvWaktuKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali: 2026-06-26 18:30"
+        android:textSize="12sp"
+        android:textColor="#888" />
+
+    <TextView
+        android:id="@+id/tvLetakKunci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letak Kunci: Di bawah pot"
+        android:textSize="12sp"
+        android:textColor="#888" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_status_keluar"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

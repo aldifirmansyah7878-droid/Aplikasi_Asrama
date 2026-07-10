@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aplikasi_asrama">
+
+    <!-- ================================================= -->
+    <!-- IZIN DASAR -->
+    <!-- ================================================= -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <!-- ================================================= -->
+    <!-- IZIN LOKASI -->
+    <!-- ================================================= -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <!-- ================================================= -->
+    <!-- IZIN STORAGE (untuk API level yang sesuai) -->
+    <!-- ================================================= -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <!-- ================================================= -->
+    <!-- IZIN BACKGROUND TASK & ALARM -->
+    <!-- ================================================= -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        android:minSdkVersion="31" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Camera feature (tidak wajib) -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- ================================================= -->
+    <!-- APPLICATION -->
+    <!-- ================================================= -->
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Aplikasi_Asrama"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Google Maps API Key (GANTI dengan kunci asli Anda) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY_HERE" />
+
+        <service
+            android:name=".service.TrackingService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <!-- ================================================= -->
+        <!-- ACTIVITIES -->
+        <!-- ================================================= -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".UserDashboardActivity"
+            android:exported="false" />
+
+        <!-- Penghuni -->
+        <activity
+            android:name=".penghuni.PenghuniActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".penghuni.TambahEditPenghuniActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".penghuni.EditProfilActivity"
+            android:exported="false" />
+
+        <!-- Kamar -->
+        <activity
+            android:name=".kamar.KamarActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".kamar.TambahEditKamarActivity"
+            android:exported="false" />
+
+        <!-- Pembayaran -->
+        <activity
+            android:name=".pembayaran.PembayaranActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pembayaran.TambahPembayaranActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pembayaran.PembayaranUserActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pembayaran.PembayaranAdminActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pembayaran.PembayaranDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pembayaran.UploadBuktiPembayaranActivity"
+            android:exported="false" />
+
+        <!-- ================================================= -->
+        <!-- IZIN (semua aktivitas ada di package .izin) -->
+        <!-- ================================================= -->
+        <activity
+            android:name=".izin.TambahIzinActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".izin.IzinAdminActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".izin.RiwayatIzinActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".izin.DetailIzinActivity"
+            android:exported="false" />
+
+        <!-- Keluhan -->
+        <activity
+            android:name=".keluhan.KeluhanUserActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".keluhan.KeluhanAdminActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".keluhan.KeluhanDetailActivity"
+            android:exported="false" />
+
+        <!-- Paket -->
+        <activity
+            android:name=".paket.PaketUserActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".paket.AdminPaketActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".paket.TambahPaketActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".paket.DetailPaketActivity"
+            android:exported="false" />
+
+        <!-- Tamu -->
+        <activity
+            android:name=".tamu.TamuUserActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".tamu.AdminTamuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".tamu.TambahTamuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".tamu.DetailTamuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".keluhan.RiwayatKeluhanActivity"
+            android:exported="false" />
+
+
+        <!-- ================================================= -->
+        <!-- FILE PROVIDER (untuk mengambil foto) -->
+        <!-- ================================================= -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+
+        </provider>
+
+    </application>
+
+</manifest>

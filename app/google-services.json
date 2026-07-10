@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "163151439712",
+    "project_id": "asrama-mahasiswa",
+    "storage_bucket": "asrama-mahasiswa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163151439712:android:964e7518fbe6dfc1d4e005",
+        "android_client_info": {
+          "package_name": "com.example.aplikasi_asrama"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuXALAdZsDlKA8IRInL17o6Y0G5UHxsM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

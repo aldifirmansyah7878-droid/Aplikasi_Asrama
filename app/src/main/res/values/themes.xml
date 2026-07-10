@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Aplikasi_Asrama" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#1E293B</item>
+        <item name="colorPrimaryVariant">#0F172A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#4F46E5</item>
+        <item name="colorSecondaryVariant">#7C3AED</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- ✅ TAMBAHAN: Warna error (opsional tapi disarankan) -->
+        <item name="colorError">#DC2626</item>
+
+        <!-- ✅ TAMBAHAN: Mengatur status bar (lebih baik) -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- ✅ TAMBAHAN: Warna background default -->
+        <item name="android:windowBackground">#F8F9FA</item>
+
+        <!-- ✅ TAMBAHAN: Tema untuk komponen Material (chip, text field) -->
+        <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Action</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+
+        <!-- ✅ TAMBAHAN: Warna surface dan onSurface -->
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#1E293B</item>
+
+    </style>
+</resources>
